@@ -1,0 +1,8 @@
+
+
+Route::get('/expenseHead/index', [ExpenseController::class, 'expenseHeadIndex'])->name('EH-index');
+Route::get('/ExpenseHead/create', [ExpenseController::class, 'expenseHeadCreate'])->name('EH-create');
+Route::post('/ExpenseHead/store', [ExpenseController::class, 'expenseHeadStore'])->name('EH-store');
+Route::get('/ExpenseHead/edit/{id}', [ExpenseController::class, 'expenseHeadEdit'])->name('EH-edit');
+Route::get('/ExpenseHead/update/{id}', [ExpenseController::class, 'expenseHeadUpdate'])->name('EH-update');
+Route::get('/ExpenseHead/deletee/{id}', [ExpenseController::class, 'expenseHeadDelete'])->name('EH-remove');
